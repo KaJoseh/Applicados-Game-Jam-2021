@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/menuNABO.unity
+    guid: 652f47a4bae0aca4e8ae2de516873358
+  - enabled: 1
+    path: Assets/Scenes/introduccionNABO.unity
+    guid: c3e926aa8933e214cb2b17cfe10e2c9c
   m_configObjects: {}
