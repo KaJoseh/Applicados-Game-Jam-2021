@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a95b61ad-9e5b-4c98-a302-1bf56630237c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Applicados-Game-Jam-2021/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Applicados-Game-Jam-2021/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Applicados-Game-Jam-2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Applicados-Game-Jam-2021/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EscenaAna.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EscenaAna.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GenerarSalas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GenerarSalas.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,21 +58,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GenerarSalas.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+            <state relative-caret-position="688">
+              <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
               <folding>
-                <marker date="1612044578728" expanded="false" signature="6:109" ph="..." />
-                <marker date="1612044578728" expanded="true" signature="152:2280" ph="{...}" />
-                <marker date="1612044578728" expanded="true" signature="602:637" ph="{...}" />
-                <marker date="1612044578728" expanded="true" signature="695:716" ph="{...}" />
-                <marker date="1612044578728" expanded="true" signature="748:1012" ph="{...}" />
-                <marker date="1612044578728" expanded="true" signature="1036:2278" ph="{...}" />
-                <marker date="1612044578728" expanded="true" signature="1070:1987" ph="{...}" />
-                <marker date="1612044578728" expanded="true" signature="1908:1976" ph="{...}" />
-                <marker date="1612044578728" expanded="true" signature="2000:2254" ph="{...}" />
+                <marker date="1612046897197" expanded="false" signature="6:109" ph="..." />
+                <marker date="1612046897197" expanded="true" signature="152:2039" ph="{...}" />
+                <marker date="1612046897197" expanded="true" signature="576:611" ph="{...}" />
+                <marker date="1612046897197" expanded="true" signature="669:690" ph="{...}" />
+                <marker date="1612046897197" expanded="true" signature="720:2037" ph="{...}" />
+                <marker date="1612046897197" expanded="true" signature="829:1746" ph="{...}" />
+                <marker date="1612046897197" expanded="true" signature="1667:1735" ph="{...}" />
+                <marker date="1612046897197" expanded="true" signature="1759:2013" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SalaCorrecta.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <marker date="1612046897295" expanded="false" signature="6:78" ph="..." />
+                <marker date="1612046897295" expanded="true" signature="121:634" ph="{...}" />
+                <marker date="1612046897295" expanded="true" signature="362:626" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -98,12 +109,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Temporizador.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GenerarSalas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sala.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SalaCorrecta.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Temporizador.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sala.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SalaCorrecta.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GenerarSalas.cs" />
       </list>
     </option>
@@ -137,6 +150,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -174,12 +188,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612030683665</updated>
-      <workItem from="1612030730464" duration="8891000" />
+      <workItem from="1612030730464" duration="10823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8891000" />
+    <option name="totallyTimeSpent" value="10823000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -282,18 +296,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GenerarSalas.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+        <state relative-caret-position="688">
+          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
           <folding>
-            <marker date="1612044578728" expanded="false" signature="6:109" ph="..." />
-            <marker date="1612044578728" expanded="true" signature="152:2280" ph="{...}" />
-            <marker date="1612044578728" expanded="true" signature="602:637" ph="{...}" />
-            <marker date="1612044578728" expanded="true" signature="695:716" ph="{...}" />
-            <marker date="1612044578728" expanded="true" signature="748:1012" ph="{...}" />
-            <marker date="1612044578728" expanded="true" signature="1036:2278" ph="{...}" />
-            <marker date="1612044578728" expanded="true" signature="1070:1987" ph="{...}" />
-            <marker date="1612044578728" expanded="true" signature="1908:1976" ph="{...}" />
-            <marker date="1612044578728" expanded="true" signature="2000:2254" ph="{...}" />
+            <marker date="1612046897197" expanded="false" signature="6:109" ph="..." />
+            <marker date="1612046897197" expanded="true" signature="152:2039" ph="{...}" />
+            <marker date="1612046897197" expanded="true" signature="576:611" ph="{...}" />
+            <marker date="1612046897197" expanded="true" signature="669:690" ph="{...}" />
+            <marker date="1612046897197" expanded="true" signature="720:2037" ph="{...}" />
+            <marker date="1612046897197" expanded="true" signature="829:1746" ph="{...}" />
+            <marker date="1612046897197" expanded="true" signature="1667:1735" ph="{...}" />
+            <marker date="1612046897197" expanded="true" signature="1759:2013" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SalaCorrecta.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <marker date="1612046897295" expanded="false" signature="6:78" ph="..." />
+            <marker date="1612046897295" expanded="true" signature="121:634" ph="{...}" />
+            <marker date="1612046897295" expanded="true" signature="362:626" ph="{...}" />
           </folding>
         </state>
       </provider>
