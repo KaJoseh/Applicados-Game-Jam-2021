@@ -497,15 +497,15 @@ RectTransform:
   m_GameObject: {fileID: 1072997712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0683, y: 1.0683, z: 1.0683}
   m_Children: []
   m_Father: {fileID: 68432554}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16, y: 176}
-  m_SizeDelta: {x: 648.65, y: 153.95}
+  m_AnchoredPosition: {x: -9, y: 163}
+  m_SizeDelta: {x: 546.43, y: 153.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1072997714
 MonoBehaviour:
@@ -527,12 +527,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Presiona E para Empezar
+  m_text: 'Oh, mi gato acaba de morir, pero no logro encontrar su alma, por lo que
+    necesito de tu ayuda.
 
-    uwu'
+'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1d629175c0e4b0349a0a2971f4bd123f, type: 2}
+  m_sharedMaterial: {fileID: -6270730868831068337, guid: 1d629175c0e4b0349a0a2971f4bd123f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -556,15 +557,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.6
-  m_fontSizeBase: 42.6
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

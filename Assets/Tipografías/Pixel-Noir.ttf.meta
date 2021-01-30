@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 87ca1610a9222364bb81a5be8619eee0
+guid: 71836629b5ec7354a8752971db0fa433
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Pixel-Noir Skinny Short
+  - Pixel-Noir
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
