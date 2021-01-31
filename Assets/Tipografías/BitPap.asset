@@ -67,7 +67,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _FaceTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 1be8d4efe587e3c4fa548b0efdc0c37d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -102,9 +102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: BitPap
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -1587887490
   material: {fileID: -6270730868831068337}
-  materialHashCode: 0
+  materialHashCode: -476185314
   m_Version: 1.1.0
   m_SourceFontFileGUID: fdf79d6651cf23e48850a123348260f5
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: fdf79d6651cf23e48850a123348260f5, type: 3}
@@ -1864,6 +1864,7 @@ MonoBehaviour:
   - {fileID: -7955280514418225244}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
+  m_ClearDynamicDataOnBuild: 0
   m_UsedGlyphRects:
   - m_X: 0
     m_Y: 0
