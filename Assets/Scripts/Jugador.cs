@@ -16,6 +16,7 @@ public class Jugador : MonoBehaviour
     [SerializeField] private float velocidadInicial;
     private float m_Speed;
     private Temporizador tiempo;
+    private bool respondido = false;
     
     SpriteRenderer BatteryRenderer;
     private Sala salaActual = new Sala();
@@ -55,14 +56,18 @@ public class Jugador : MonoBehaviour
             {
                 BatteryRenderer.sprite=blow;
             }
-            if (Input.GetButtonDown("Fire1"))
+            if(!respondido)
             {
-                PresionarQ();
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    PresionarQ();
+                }
+                if (Input.GetButtonDown("Fire2"))
+                {
+                    PresionarE();
+                }
             }
-            if (Input.GetButtonDown("Fire2"))
-            {
-                PresionarE();
-            }
+            
         }
         else 
         {
@@ -81,11 +86,14 @@ public class Jugador : MonoBehaviour
             Debug.Log("wrong");
             
             intentos = intentos--;
+
+            respondido = true;
         }
         //la sala es incorrecta
         else
         {
             Debug.Log("Siguiente Sala");
+            respondido = true;
             //Pasar a la siguiente sala
         }
     }
@@ -97,14 +105,15 @@ public class Jugador : MonoBehaviour
         //Dice que la sala correcta es correcta
         if (salaActual.Equals(salaCorrecta))
         {
-           //Va a escena de ganar
-           Debug.Log("Escena de ganar");
+            //Va a escena de ganar
+            Debug.Log("Escena de ganar");
         }
         else
         {
             Debug.Log("wrong");
            
             intentos--;
+            respondido = true;
         }
     }
 
@@ -119,17 +128,23 @@ public class Jugador : MonoBehaviour
         if (col.tag== "Puerta")
         {
             Debug.Log("Puerta");
+            if (!respondido)
+            {
+                intentos--;
+            }
             m_Speed = 0;
             FindObjectOfType<moverSalas>().called = true;
             Invoke("Waiting", tiempoDeEspera);
-            
+            respondido = false;
+
         }
+       
         
     }
 
     void Waiting()
     {
         m_Speed = velocidadInicial;
-        tiempo.ReiniciarTiempo();
+        //tiempo.ReiniciarTiempo();
     }
 }

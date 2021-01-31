@@ -12,9 +12,9 @@ public class SalaCorrecta : MonoBehaviour
     
     public void DefinirSalaCorrecta()
     {
-        salaCorrecta.pared = spritesPared[Random.Range(0, spritesPared.Count - 1)];
-        salaCorrecta.mesa = spritesMesa[Random.Range(0, spritesMesa.Count - 1)];
-        salaCorrecta.cuadro = spritesCuadro[Random.Range(0, spritesCuadro.Count - 1)];
+        salaCorrecta.pared = spritesPared[Random.Range(0, spritesPared.Count )];
+        salaCorrecta.mesa = spritesMesa[Random.Range(0, spritesMesa.Count )];
+        salaCorrecta.cuadro = spritesCuadro[Random.Range(0, spritesCuadro.Count )];
     }
     
     void Start(){

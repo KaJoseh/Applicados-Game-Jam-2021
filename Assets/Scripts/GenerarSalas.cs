@@ -39,15 +39,15 @@ public class GenerarSalas : MonoBehaviour
         if (contador <= 10)
         {
                     
-                Sprite spritePared = spritesPared[Random.Range(0, spritesPared.Count - 1)];
+                Sprite spritePared = spritesPared[Random.Range(0, spritesPared.Count )];
                 pared.GetComponent<SpriteRenderer>().sprite = spritePared;
                 salaTemporal.pared = spritePared;
                     
-                Sprite spriteMesa = spritesMesa[Random.Range(0, spritesMesa.Count - 1)];
+                Sprite spriteMesa = spritesMesa[Random.Range(0, spritesMesa.Count )];
                 mesa.GetComponent<SpriteRenderer>().sprite = spriteMesa;
                 salaTemporal.mesa = spriteMesa;
                     
-                Sprite spriteCuadro = spritesCuadro[Random.Range(0, spritesCuadro.Count - 1)];
+                Sprite spriteCuadro = spritesCuadro[Random.Range(0, spritesCuadro.Count )];
                 cuadro.GetComponent<SpriteRenderer>().sprite = spriteCuadro;
                 salaTemporal.cuadro = spriteCuadro;
             
@@ -64,6 +64,7 @@ public class GenerarSalas : MonoBehaviour
             cuadro.GetComponent<SpriteRenderer>().sprite = salaCorrecta.cuadro;
         }
         
+        Debug.Log(salaTemporal.pared.name+ salaTemporal.mesa.name + salaTemporal.cuadro.name);
        
 
     }
