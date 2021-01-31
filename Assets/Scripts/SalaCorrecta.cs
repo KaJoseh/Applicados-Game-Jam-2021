@@ -19,7 +19,7 @@ public class SalaCorrecta : MonoBehaviour
     
     void Start(){
         DefinirSalaCorrecta();
-        Debug.Log(salaCorrecta.pared.ToString() + salaCorrecta.mesa.ToString() + salaCorrecta.cuadro.ToString());
+        Debug.Log(salaCorrecta.pared.name + salaCorrecta.mesa.name + salaCorrecta.cuadro.name);
     }
     
 }

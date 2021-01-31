@@ -11,6 +11,7 @@ public class pasarDialogo : MonoBehaviour
     public TextMeshProUGUI texto;
     public string string1, string2, string3, string4;
     public KeyCode teclaPasarDialogo;
+    private Sala descripcion;
 
     Scene escenaActual;
     int numeroTexto;
@@ -24,6 +25,12 @@ public class pasarDialogo : MonoBehaviour
         sc = GetComponent<SceneChanger>();
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = sonidoPasar;
+
+        FindObjectOfType<SalaCorrecta>().DefinirSalaCorrecta();
+        descripcion = FindObjectOfType<SalaCorrecta>().salaCorrecta;
+
+        string3 = "Pared " + descripcion.pared.name +", Un cuadro de " + descripcion.cuadro.name + " y una mesa con " 
+                  + descripcion.mesa.name + "...";
     }
 
     // Update is called once per frame
