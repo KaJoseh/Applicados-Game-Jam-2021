@@ -431,6 +431,7 @@ GameObject:
   - component: {fileID: 319935072}
   - component: {fileID: 319935071}
   - component: {fileID: 319935074}
+  - component: {fileID: 319935075}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -488,8 +489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 16
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
@@ -511,7 +512,7 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 2097001224}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -532,8 +533,105 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77eb478f78d587d4bbe770d880b6729e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAceptar: {fileID: 8300000, guid: b5141cea1c8dfec4fb56c65774211c7c, type: 3}
   jugador: {fileID: 835594478}
   instruccion: {fileID: 1798932312}
+--- !u!82 &319935075
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319935069}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.08
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &365443191
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,6 +1027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sCorrecto: {fileID: 8300000, guid: 912895b361630594ba838b8aeac7d3f2, type: 3}
   sIncorrecto: {fileID: 8300000, guid: 073cdb1a363807240a7afa7009b5de74, type: 3}
+  sVictoria: {fileID: 8300000, guid: 61e7c984dde169543920bf7b05829ae6, type: 3}
   cShake: {fileID: 2097001229}
   blost: {fileID: 21300000, guid: 0dcca2c13c863044e952414895571b4d, type: 3}
   bmid: {fileID: 21300000, guid: dd9b084af0870554a8bd090797b6a638, type: 3}
@@ -967,7 +1066,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1386,12 +1485,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Si la sala es la correcta presiona E
-
-    Si no lo es, presiona Q
-
-    Presiona
-    cualquiera de los dos para empezar'
+  m_text: "Si la sala es la correcta presiona E\nSi no lo es, presiona Q.\nPresiona
+    cualquiera de los dos para empezar\nCada error consume tu bater\xEDa."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d629175c0e4b0349a0a2971f4bd123f, type: 2}
   m_sharedMaterial: {fileID: -6270730868831068337, guid: 1d629175c0e4b0349a0a2971f4bd123f, type: 2}
@@ -1476,8 +1571,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135731930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00038447345}
+  m_LocalScale: {x: 1, y: 0.86021507, z: 1}
   m_Children: []
   m_Father: {fileID: 1798932315}
   m_RootOrder: 0
@@ -1660,7 +1755,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315223863}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -179.676, y: 111.73399, z: -2973.857}
+  m_LocalPosition: {x: -350, y: 218, z: -2973.857}
   m_LocalScale: {x: 22.54, y: 22.54, z: 32.2}
   m_Children: []
   m_Father: {fileID: 319935070}
@@ -2396,7 +2491,7 @@ RectTransform:
   m_GameObject: {fileID: 1798932312}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -3154}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.27, y: 1.476375, z: 1.27}
   m_Children:
   - {fileID: 1135731933}
   m_Father: {fileID: 319935070}

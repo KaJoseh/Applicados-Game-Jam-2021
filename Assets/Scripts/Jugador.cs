@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Jugador : MonoBehaviour
 {
-    public AudioClip sCorrecto, sIncorrecto;
+    public AudioClip sCorrecto, sIncorrecto, sVictoria;
     AudioSource audioSource;
     public cameraShake cShake;
 
@@ -124,7 +124,7 @@ public class Jugador : MonoBehaviour
             //Va a escena de ganar
             Debug.Log("Escena de ganar");
 
-            audioSource.clip = sCorrecto;
+            audioSource.clip = sVictoria;
             audioSource.Play();
             sc.enabled = true;
         }
