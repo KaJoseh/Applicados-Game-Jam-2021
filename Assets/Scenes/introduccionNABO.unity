@@ -1489,17 +1489,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spritesPared:
-  - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 21300000, guid: d8b262d1056c3bc41bb5e7fcba751ba3, type: 3}
+  - {fileID: 21300000, guid: c4497385aa45e4341a51aeddb0ddcae7, type: 3}
+  - {fileID: 21300000, guid: 79425fccc18bfb0459cc7179964c11ae, type: 3}
   spritesMesa:
-  - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 21300000, guid: e9949b9be62ceb744b5c1aff61805871, type: 3}
+  - {fileID: 21300000, guid: 4d1f910ec78ebaa4893d55778467332b, type: 3}
+  - {fileID: 21300000, guid: 2bebf22696012c449bb47adeeb03bb02, type: 3}
   spritesCuadro:
-  - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 21300000, guid: fe2040dcc8365d5419d652209c0bca8f, type: 3}
+  - {fileID: 21300000, guid: d217bebe8bd8bcd4aadba5948081c7e2, type: 3}
+  - {fileID: 21300000, guid: 4f588dc3052ec194680c29163fe1f658, type: 3}
 --- !u!114 &1877581715
 MonoBehaviour:
   m_ObjectHideFlags: 0
