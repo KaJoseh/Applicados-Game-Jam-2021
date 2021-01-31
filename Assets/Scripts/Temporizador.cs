@@ -27,13 +27,13 @@ public class Temporizador : MonoBehaviour
                 Debug.Log("Se acabó el tiempo");
                 timerActivado = false;
                 FindObjectOfType<Jugador>().GetComponent<Jugador>().intentos--;
-                //ReiniciarTiempo();
+                
             }
 	
         }
     }
     
-    void ReiniciarTiempo()
+    public void ReiniciarTiempo()
     {
         tiempoRestante = tiempoLimite;
         timerActivado = true;

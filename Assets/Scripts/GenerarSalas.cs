@@ -33,7 +33,7 @@ public class GenerarSalas : MonoBehaviour
 
     
 
-    void DefinirSala()
+    public void DefinirSala()
     {
         Sala salaCorrecta = FindObjectOfType<SalaCorrecta>().salaCorrecta;
         if (contador <= 10)

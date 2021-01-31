@@ -13,11 +13,14 @@ public class Jugador : MonoBehaviour
 
 
     Rigidbody2D m_Rigidbody;
-    [SerializeField] private float m_Speed;
-
+    [SerializeField] private float velocidadInicial;
+    private float m_Speed;
+    private Temporizador tiempo;
+    
     SpriteRenderer BatteryRenderer;
     private Sala salaActual = new Sala();
     public float intentos = 3;
+    public float tiempoDeEspera = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +29,8 @@ public class Jugador : MonoBehaviour
         //Fetch the Rigidbody component you attach from your GameObject
         m_Rigidbody = GetComponent<Rigidbody2D>();
         //Set the speed of the GameObject
-        m_Speed = 3.0f;
+        m_Speed = velocidadInicial;
+        tiempo = FindObjectOfType<Temporizador>();
 
     }
 
@@ -106,15 +110,26 @@ public class Jugador : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        
         if (col.tag == "Sala")
         {
             salaActual = col.GetComponent<GenerarSalas>().salaTemporal;
             Debug.Log(col.name);
         }
-        else
+        if (col.tag== "Puerta")
         {
-            transform.position = new Vector3(-10,-3,0);
+            Debug.Log("Puerta");
+            m_Speed = 0;
+            FindObjectOfType<moverSalas>().called = true;
+            Invoke("Waiting", tiempoDeEspera);
+            
         }
         
+    }
+
+    void Waiting()
+    {
+        m_Speed = velocidadInicial;
+        tiempo.ReiniciarTiempo();
     }
 }

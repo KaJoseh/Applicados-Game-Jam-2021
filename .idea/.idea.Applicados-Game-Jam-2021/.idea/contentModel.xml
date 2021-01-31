@@ -18,6 +18,7 @@
           <e p="GenerarSalas.cs" t="Include" />
           <e p="Jugador.cs" t="Include" />
           <e p="ManagerScript.cs" t="Include" />
+          <e p="moverSalas.cs" t="Include" />
           <e p="Movimiento.cs" t="Include" />
           <e p="Sala.cs" t="Include" />
           <e p="SalaCorrecta.cs" t="Include" />
