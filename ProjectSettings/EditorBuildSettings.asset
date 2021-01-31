@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/EscenaAna.unity
     guid: 0aeaaf90f7e3ef64fa0d1281e59b790c
+  - enabled: 1
+    path: Assets/Scenes/Perder.unity
+    guid: 29923831cfdde6145a4e7ae1eb95af56
+  - enabled: 1
+    path: Assets/Scenes/Ganar.unity
+    guid: ee583e2f2b7c3244f9963d21ab8ecabc
   m_configObjects: {}
