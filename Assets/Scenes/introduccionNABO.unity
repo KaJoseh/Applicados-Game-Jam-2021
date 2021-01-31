@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeout: 1
-  sceneName: menuNABO
+  sceneName: EscenaAna
   doFade: 1
 --- !u!114 &68432557
 MonoBehaviour:
@@ -1467,11 +1467,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1877581716}
-  - component: {fileID: 1877581715}
   - component: {fileID: 1877581714}
+  - component: {fileID: 1877581715}
   m_Layer: 0
   m_Name: DefinirSala
-  m_TagString: Untagged
+  m_TagString: SalaCorrecta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1507,12 +1507,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877581713}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 622476232239ae542bba5f5f598ac9bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bc41d7b58c48a84a892208bb2b6aa9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoLimite: 3
 --- !u!4 &1877581716
 Transform:
   m_ObjectHideFlags: 0

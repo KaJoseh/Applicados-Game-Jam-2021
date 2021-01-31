@@ -60,6 +60,7 @@ public class pasarDialogo : MonoBehaviour
             audioSource.Play();
             sc.enabled = true;
             print("CAMBIANDO ESCENA");
+
         }
 
 
