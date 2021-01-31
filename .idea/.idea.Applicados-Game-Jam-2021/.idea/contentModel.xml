@@ -13,8 +13,10 @@
             <e p="Fading.cs" t="Include" />
             <e p="SceneChanger.cs" t="Include" />
             <e p="sceneChangerClick.cs" t="Include" />
+            <e p="SceneChangerKey.cs" t="Include" />
           </e>
           <e p="GenerarSalas.cs" t="Include" />
+          <e p="Jugador.cs" t="Include" />
           <e p="ManagerScript.cs" t="Include" />
           <e p="Movimiento.cs" t="Include" />
           <e p="Sala.cs" t="Include" />

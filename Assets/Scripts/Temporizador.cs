@@ -20,11 +20,11 @@ public class Temporizador : MonoBehaviour
     void Update()
     {
         if(timerActivado){
-            Debug.Log(tiempoRestante.ToString());
+            //Debug.Log(tiempoRestante.ToString());
             if(tiempoRestante > 0){
                 tiempoRestante -= Time.deltaTime;
             }else{
-                Debug.Log("Se acabó el tiempo");
+               // Debug.Log("Se acabó el tiempo");
                 timerActivado = false;
                 //método de morir
                //ReiniciarTiempo();

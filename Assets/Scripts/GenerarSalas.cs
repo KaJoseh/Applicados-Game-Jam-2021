@@ -16,12 +16,13 @@ public class GenerarSalas : MonoBehaviour
 
 
     private int contador= 0;
+    public Sala salaTemporal = new Sala();
     
     
     // Start is called before the first frame update
     void Start()
     {
-        //DefinirSala();
+        DefinirSala();
     }
 
     // Update is called once per frame
@@ -37,7 +38,6 @@ public class GenerarSalas : MonoBehaviour
         Sala salaCorrecta = FindObjectOfType<SalaCorrecta>().salaCorrecta;
         if (contador <= 10)
         {
-            Sala salaTemporal = new Sala(); 
                     
                 Sprite spritePared = spritesPared[Random.Range(0, spritesPared.Count - 1)];
                 pared.GetComponent<SpriteRenderer>().sprite = spritePared;
