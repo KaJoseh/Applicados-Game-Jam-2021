@@ -1386,9 +1386,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Si la sala es la correcta presiona Q
+  m_text: 'Si la sala es la correcta presiona E
 
-    Si no lo es, presiona E
+    Si no lo es, presiona Q
 
     Presiona
     cualquiera de los dos para empezar'
