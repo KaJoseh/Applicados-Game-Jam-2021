@@ -26,6 +26,8 @@ public class Jugador : MonoBehaviour
     private Sala salaActual = new Sala();
     public float intentos = 3;
     public float tiempoDeEspera = 2;
+    
+    private Sala salaCorrecta;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +40,7 @@ public class Jugador : MonoBehaviour
         //Set the speed of the GameObject
         m_Speed = velocidadInicial;
         tiempo = FindObjectOfType<Temporizador>();
+        salaCorrecta = FindObjectOfType<SalaCorrecta>().salaCorrecta;
 
     }
 
@@ -85,7 +88,7 @@ public class Jugador : MonoBehaviour
     //Selecciona que la sala no es correcta
     void PresionarQ()
     {
-        Sala salaCorrecta = FindObjectOfType<SalaCorrecta>().salaCorrecta;
+        
         //Dice que la sala correcta es incorrecta
         if (salaActual.Equals(salaCorrecta))
         {
@@ -113,7 +116,6 @@ public class Jugador : MonoBehaviour
     //Dice que la sala es correcta
     void PresionarE()
     {
-        Sala salaCorrecta = FindObjectOfType<SalaCorrecta>().salaCorrecta;
         //Dice que la sala correcta es correcta
         if (salaActual.Equals(salaCorrecta))
         {

@@ -15,11 +15,12 @@ public class SalaCorrecta : MonoBehaviour
         salaCorrecta.pared = spritesPared[Random.Range(0, spritesPared.Count )];
         salaCorrecta.mesa = spritesMesa[Random.Range(0, spritesMesa.Count )];
         salaCorrecta.cuadro = spritesCuadro[Random.Range(0, spritesCuadro.Count )];
+        Debug.Log("Sala: " + salaCorrecta.pared.name + salaCorrecta.mesa.name + salaCorrecta.cuadro.name);
     }
     
     void Start(){
-        DefinirSalaCorrecta();
-        Debug.Log(salaCorrecta.pared.name + salaCorrecta.mesa.name + salaCorrecta.cuadro.name);
+        //DefinirSalaCorrecta();
+       
     }
     
 }
