@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Sala
   - Puerta
+  - SalaCorrecta
   layers:
   - Default
   - TransparentFX
