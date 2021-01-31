@@ -39,6 +39,18 @@ public class Jugador : MonoBehaviour
         
         if (intentos>0)
         {
+            if (intentos == 3)
+            {
+                BatteryRenderer.sprite=blost;
+            }
+            else if (intentos == 2)
+            {
+                BatteryRenderer.sprite=bmid;
+            }
+            else if (intentos == 1)
+            {
+                BatteryRenderer.sprite=blow;
+            }
             if (Input.GetButtonDown("Fire1"))
             {
                 PresionarQ();
@@ -63,19 +75,8 @@ public class Jugador : MonoBehaviour
         if (salaActual.Equals(salaCorrecta))
         {
             Debug.Log("wrong");
-            if (intentos == 3)
-            {
-                BatteryRenderer.sprite=blost;
-            }
-            if (intentos == 2)
-            {
-                BatteryRenderer.sprite=bmid;
-            }
-            if (intentos == 1)
-            {
-                BatteryRenderer.sprite=blow;
-            }
-            intentos = intentos - 1;
+            
+            intentos = intentos--;
         }
         //la sala es incorrecta
         else
@@ -98,19 +99,8 @@ public class Jugador : MonoBehaviour
         else
         {
             Debug.Log("wrong");
-            if (intentos == 3)
-            {
-                BatteryRenderer.sprite=blost;
-            }
-            if (intentos == 2)
-            {
-                BatteryRenderer.sprite=bmid;
-            }
-            if (intentos == 1)
-            {
-                BatteryRenderer.sprite=blow;
-            }
-            intentos = intentos - 1;
+           
+            intentos--;
         }
     }
 

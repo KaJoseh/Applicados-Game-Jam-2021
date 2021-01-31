@@ -24,11 +24,10 @@ public class Temporizador : MonoBehaviour
             if(tiempoRestante > 0){
                 tiempoRestante -= Time.deltaTime;
             }else{
-               // Debug.Log("Se acabó el tiempo");
+                Debug.Log("Se acabó el tiempo");
                 timerActivado = false;
-                //método de morir
-               //ReiniciarTiempo();
-
+                FindObjectOfType<Jugador>().GetComponent<Jugador>().intentos--;
+                //ReiniciarTiempo();
             }
 	
         }
