@@ -6,7 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class Jugador : MonoBehaviour
 {
- 
+    public AudioClip sCorrecto, sIncorrecto;
+    AudioSource audioSource;
+    public cameraShake cShake;
+
+    [Space]
     public Sprite blost;
     public Sprite bmid;
     public Sprite blow;
@@ -26,6 +30,8 @@ public class Jugador : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         BatteryRenderer = GameObject.Find("battery").GetComponent<SpriteRenderer>();
         //Fetch the Rigidbody component you attach from your GameObject
         m_Rigidbody = GetComponent<Rigidbody2D>();
@@ -84,7 +90,10 @@ public class Jugador : MonoBehaviour
         if (salaActual.Equals(salaCorrecta))
         {
             Debug.Log("wrong");
-            
+            cShake.enabled = true;
+            audioSource.clip = sIncorrecto;
+            audioSource.Play();
+
             intentos = intentos--;
 
             respondido = true;
@@ -92,6 +101,9 @@ public class Jugador : MonoBehaviour
         //la sala es incorrecta
         else
         {
+            audioSource.clip = sCorrecto;
+            audioSource.Play();
+
             Debug.Log("Siguiente Sala");
             respondido = true;
             //Pasar a la siguiente sala
@@ -107,11 +119,16 @@ public class Jugador : MonoBehaviour
         {
             //Va a escena de ganar
             Debug.Log("Escena de ganar");
+
+            audioSource.clip = sCorrecto;
+            audioSource.Play();
         }
         else
         {
             Debug.Log("wrong");
-           
+            cShake.enabled = true;
+            audioSource.clip = sIncorrecto;
+            audioSource.Play();
             intentos--;
             respondido = true;
         }
@@ -131,6 +148,9 @@ public class Jugador : MonoBehaviour
             if (!respondido)
             {
                 intentos--;
+                cShake.enabled = true;
+                audioSource.clip = sIncorrecto;
+                audioSource.Play();
             }
             m_Speed = 0;
             FindObjectOfType<moverSalas>().called = true;
