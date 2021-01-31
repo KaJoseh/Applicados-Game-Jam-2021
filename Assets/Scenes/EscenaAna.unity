@@ -779,6 +779,7 @@ GameObject:
   - component: {fileID: 835594480}
   - component: {fileID: 835594484}
   - component: {fileID: 835594485}
+  - component: {fileID: 835594486}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1034,6 +1035,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &835594486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835594478}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2455cfdad269f04ba333cbcda7ac752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeout: 1
+  sceneName: Ganar
+  doFade: 0
 --- !u!1 &844479356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2511,6 +2527,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camTransform: {fileID: 2097001225}
-  shakeDuration: 0.3
   shakeAmount: 0.2
   decreaseFactor: 0.5

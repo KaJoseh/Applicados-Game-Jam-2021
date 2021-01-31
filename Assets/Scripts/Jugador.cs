@@ -28,12 +28,14 @@ public class Jugador : MonoBehaviour
     public float tiempoDeEspera = 2;
     
     private Sala salaCorrecta;
+    SceneChanger sc;
 
     // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-
+        sc = GetComponent<SceneChanger>();
+    
         BatteryRenderer = GameObject.Find("battery").GetComponent<SpriteRenderer>();
         //Fetch the Rigidbody component you attach from your GameObject
         m_Rigidbody = GetComponent<Rigidbody2D>();
@@ -124,6 +126,7 @@ public class Jugador : MonoBehaviour
 
             audioSource.clip = sCorrecto;
             audioSource.Play();
+            sc.enabled = true;
         }
         else
         {
