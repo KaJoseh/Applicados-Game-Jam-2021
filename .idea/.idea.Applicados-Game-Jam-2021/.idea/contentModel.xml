@@ -16,6 +16,7 @@
             <e p="sceneChangerClick.cs" t="Include" />
             <e p="SceneChangerKey.cs" t="Include" />
           </e>
+          <e p="cameraShake.cs" t="Include" />
           <e p="Dialogos" t="Include">
             <e p="EscenasFinales" t="Include">
               <e p="finalHaciaMenu.cs" t="Include" />

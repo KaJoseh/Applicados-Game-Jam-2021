@@ -17,28 +17,28 @@ public class GenerarSalas : MonoBehaviour
 
     private int contador= 0;
     public Sala salaTemporal = new Sala();
-    
+    private Sala salaCorrecta;
     
     // Start is called before the first frame update
     void Start()
     {
+        salaCorrecta = FindObjectOfType<SalaCorrecta>().salaCorrecta;
         DefinirSala();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     
 
     public void DefinirSala()
     {
-        Sala salaCorrecta = FindObjectOfType<SalaCorrecta>().salaCorrecta;
-        if (contador <= 10)
+        
+        if (contador < 5)
         {
-                    
                 Sprite spritePared = spritesPared[Random.Range(0, spritesPared.Count )];
                 pared.GetComponent<SpriteRenderer>().sprite = spritePared;
                 salaTemporal.pared = spritePared;
@@ -54,6 +54,7 @@ public class GenerarSalas : MonoBehaviour
                 if (!salaTemporal.Equals(salaCorrecta))
                 {
                     contador++;
+                    Debug.Log(contador.ToString());
                 }
 
         }
@@ -62,6 +63,13 @@ public class GenerarSalas : MonoBehaviour
             pared.GetComponent<SpriteRenderer>().sprite = salaCorrecta.pared;
             mesa.GetComponent<SpriteRenderer>().sprite = salaCorrecta.mesa;
             cuadro.GetComponent<SpriteRenderer>().sprite = salaCorrecta.cuadro;
+
+            salaTemporal = salaCorrecta;
+            
+            Debug.Log("Legó a 5 ");
+            
+            Debug.Log("SAla correcta " + salaCorrecta.pared.name + salaCorrecta.mesa.name + salaCorrecta.cuadro.name);
+
         }
         
         Debug.Log(salaTemporal.pared.name+ salaTemporal.mesa.name + salaTemporal.cuadro.name);
