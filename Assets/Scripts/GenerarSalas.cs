@@ -51,10 +51,15 @@ public class GenerarSalas : MonoBehaviour
                 cuadro.GetComponent<SpriteRenderer>().sprite = spriteCuadro;
                 salaTemporal.cuadro = spriteCuadro;
             
-                if (!salaTemporal.Equals(salaCorrecta))
+                if (salaTemporal.pared == salaCorrecta.pared && salaTemporal.mesa == salaCorrecta.mesa && salaTemporal.cuadro == salaCorrecta.cuadro)
+                {
+                    salaTemporal = salaCorrecta;
+                }
+                else
                 {
                     contador++;
                     Debug.Log(contador.ToString());
+                 
                 }
 
         }
